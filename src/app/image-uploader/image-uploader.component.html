@@ -1,0 +1,12 @@
+<div class="image-uploader">
+    <input type="file" (change)="onFileSelected($event)" accept="image/*" />
+    <div class="image-container" *ngIf="imageSrc">
+      <img [src]="imageSrc" [style.transform]="'scale(' + zoom + ')'" />
+    </div>
+    <div class="controls" *ngIf="imageSrc">
+      <button (click)="zoomIn()">Zoom In</button>
+      <button (click)="zoomOut()">Zoom Out</button>
+      <button (click)="resetZoom()">Reset</button>
+    </div>
+  </div>
+  

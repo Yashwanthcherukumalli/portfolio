@@ -1,0 +1,100 @@
+/* Container and Card Styles */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #ffffff;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.btn-group {
+  display: flex;
+  gap: 0.5rem; /* Gap between buttons */
+  margin-top: 1rem;
+}
+
+.btn {
+  border: none;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.btn-info {
+  background-color: #17a2b8;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+}
+
+.btn-success {
+  background-color: #28a745;
+}
+
+.btn-info:hover {
+  background-color: #138496;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+/* Specific Card Styles */
+.professional-summary-card {
+  background-color: #f9f9f9;
+  border-left: 5px solid #007bff;
+}
+
+.professional-background-card {
+  background-color: #e9f5ff;
+  border-left: 5px solid #007bff;
+}
+
+.notable-projects-card {
+  background-color: #fff5e6;
+  border-left: 5px solid #ff9800;
+}
+
+.skills-expertise-card {
+  background-color: #e6ffed;
+  border-left: 5px solid #4caf50;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+.project-item h4, .skill-item {
+  font-size: 1.1rem;
+  color: #333;
+}

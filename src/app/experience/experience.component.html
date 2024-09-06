@@ -1,0 +1,41 @@
+<div class="container mt-4">
+    <h2>Experience</h2>
+  
+    <div *ngFor="let exp of experience" class="card mb-4">
+      <div class="card-body">
+        <h4 class="card-title">{{ exp.title }}</h4>
+        <h6 class="card-subtitle mb-2 text-muted">{{ exp.company }} - {{ exp.location }}</h6>
+        <p class="card-text"><strong>Duration:</strong> {{ exp.duration }}</p>
+        
+        <h5>Responsibilities:</h5>
+        <ul>
+          <li *ngFor="let responsibility of exp.responsibilities">{{ responsibility }}</li>
+        </ul>
+      </div>
+    </div>
+  <div class="d-flex">
+    <div class="m-4">
+        <a routerLink="/projects" class="btn btn-primary">View Projects</a>
+      </div>
+  
+      <div class="m-4">
+          <a routerLink="/skills" class="btn btn-primary">View skills</a>
+      </div>
+  
+      <div class="m-4">
+        <a routerLink="/education" class="btn btn-primary">view Educaion details</a>
+      </div>
+      
+      <div class="m-4">
+          <a routerLink="/contact" class="btn btn-primary">To contact</a>
+    </div>
+
+    <div class="m-4">
+      <a routerLink="/recentsmallworks" class="btn btn-primary">View Recent New Ideas Implemented</a>
+    </div>
+
+  </div>
+
+
+  </div>
+  

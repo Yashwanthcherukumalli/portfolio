@@ -1,0 +1,35 @@
+.skills-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.skills-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.skill-item h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.skill-item p {
+  color: #555;
+}

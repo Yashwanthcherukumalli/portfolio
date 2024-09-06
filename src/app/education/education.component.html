@@ -1,0 +1,13 @@
+<div class="container mt-5">
+    <h2>Education</h2>
+  
+    <div *ngFor="let edu of education" class="card mb-4">
+      <div class="card-body">
+        <h4 class="card-title">{{ edu.degree }}</h4>
+        <h6 class="card-subtitle mb-2 text-muted">{{ edu.institution }}</h6>
+        <p class="card-text"><strong>Location:</strong> {{ edu.location }}</p>
+        <p class="card-text"><strong>Year:</strong> {{ edu.year }}</p>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,53 @@
+/* Ensure the body and html are full height */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* Main container to hold both sidebar and content */
+  .app-container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Fixed width for sidebar */
+    height: 100%;
+    background-color: #f8f9fa;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+    z-index: 1000; /* Ensure the sidebar is on top */
+    transition: transform 0.3s ease;
+  }
+  
+  /* Content styles */
+  .main-content {
+    margin-left: 250px; /* Offset for sidebar */
+    padding: 1rem;
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: static;
+      transform: translateX(-100%);
+    }
+  
+    .sidebar.show {
+      transform: translateX(0);
+    }
+  
+    .main-content {
+      margin-left: 0;
+    }
+  }
+  

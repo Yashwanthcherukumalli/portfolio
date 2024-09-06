@@ -1,0 +1,39 @@
+<div class="container mt-5">
+  <div class="card professional-summary-card">
+    <h2 class="card-title">About Me</h2>
+    <p>{{ aboutMe.summary }}</p>
+  </div>
+
+  <div class="card professional-background-card section">
+    <h3 class="card-title">Professional Background</h3>
+    <p>{{ aboutMe.professionalBackground }}</p>
+    <div class="btn-group">
+      <button class="btn btn-info" (click)="navigateTo('experience')">View Experience</button>
+      <button class="btn btn-warning" (click)="navigateTo('education')">View Education</button>
+      <button class="btn btn-success" (click)="navigateTo('contacts')">Contact Me</button>
+    </div>
+  </div>
+
+  <div class="card notable-projects-card section">
+    <h3 class="card-title">Notable Projects</h3>
+    <ul>
+      <li *ngFor="let project of aboutMe.notableProjects" class="project-item">
+        <h4>{{ project.title }}</h4>
+        <p><strong>Technologies:</strong> {{ project.technologies }}</p>
+        <p><strong>Description:</strong> {{ project.description }}</p>
+        <p><strong>Responsibilities:</strong> {{ project.responsibilities }}</p>
+      </li>
+    </ul>
+    <button class="btn btn-primary" (click)="navigateTo('projects')">View Projects</button>
+  </div>
+
+  <div class="card skills-expertise-card section">
+    <h3 class="card-title">Skills & Expertise</h3>
+    <ul>
+      <li *ngFor="let skill of aboutMe.skillsAndExpertise" class="skill-item">
+        {{ skill }}
+      </li>
+    </ul>
+    <button class="btn btn-primary" (click)="navigateTo('skills')">View Skills</button>
+  </div>
+</div>
